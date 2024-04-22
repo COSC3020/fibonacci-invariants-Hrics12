@@ -9,5 +9,4 @@ function fib(n) {
     helper(2);
     return fibArray;
 }
-let result = fib(10);
-console.log(result);
+
