@@ -10,3 +10,5 @@ function fib(n) {
     helper(2);
     return fibArray;
 }
+let result = fib(7);
+console.log(result);
