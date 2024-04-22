@@ -1,7 +1,7 @@
 function fib(n) {
-    if (n <= 0) return [];
-    if (n === 1) return [1];
-    let fibArray = [1, 1];
+    if (n === 0) return [0];
+    if (n === 1) return [0, 1];
+    let fibArray = [0, 1];
     function helper(i) {
         if (i === n) return;
         fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
@@ -10,5 +10,3 @@ function fib(n) {
     helper(2);
     return fibArray;
 }
-let result = fib(7);
-console.log(result);
