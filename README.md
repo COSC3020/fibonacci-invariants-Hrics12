@@ -28,3 +28,5 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+For the fib() function the invariant would be that at the start of each recurisive call the array contains the correct Fib sequence up to the $ith$ index. This is true becasue at the start when $i$ equals 2, the array has the correct fib sequnce [0,1]. The at the start of the 2nd on beyond recursive call the array updates the value $i$ with the sum of the preceding numbers using $fibArray[i-1]+ fibArray[i-2]$
