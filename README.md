@@ -34,7 +34,7 @@ For the fib() function the invariant would be that at the start of each recurisi
 
 I have no idea why this is continuing to fail. I've changed the base case from my original, i've set it to start from index 0 and 1. I have no clue what the issue is. Even my original function is recursive and storing the outputs in an array.
 
-
+```javascript
 function fib(n) {
     if (n <= 2) return Array(n).fill(1);
     let fibArray = [1, 1];
@@ -48,3 +48,4 @@ function fib(n) {
 }
 let result = fib(7);
 console.log(result);
+```
