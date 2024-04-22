@@ -32,4 +32,19 @@ your answer to this markdown file.
 For the fib() function the invariant would be that at the start of each recurisive call the array contains the correct Fib sequence up to the $ith$ index. This is true becasue at the start when $i$ equals 2, the array has the correct fib sequnce [0,1]. The at the start of the 2nd on beyond recursive call the array updates the value $i$ with the sum of the preceding numbers using $fibArray[i-1]+ fibArray[i-2]$
 
 
-I have no idea why this is continuing to fail. I've changed the base case from my original, i've set it to start from index 0 and 1. I have no clue what the issue is.-
+I have no idea why this is continuing to fail. I've changed the base case from my original, i've set it to start from index 0 and 1. I have no clue what the issue is. Even my original function is recursive and storing the outputs in an array.
+
+
+function fib(n) {
+    if (n <= 2) return Array(n).fill(1);
+    let fibArray = [1, 1];
+    function helper(i) {
+        if (i === n) return;
+        fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+        helper(i + 1);
+    }
+    helper(2);
+    return fibArray;
+}
+let result = fib(7);
+console.log(result);
