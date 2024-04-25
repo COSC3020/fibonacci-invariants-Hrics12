@@ -8,5 +8,5 @@ function fib(n) {
         fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
         addFibNumbers(i + 1);
     }
-    return fibArray;
+    return fibArray[fibArray.length -1];
 }
