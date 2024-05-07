@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/rzkZS2Jf)
 # Fibonacci Invariants
 
 Recall the definition of the Fibonacci series: the first number is 0, the second
@@ -27,3 +28,9 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+For the fib() function the invariant would be that at the start of each recurisive call the array contains the correct Fib sequence up to the $ith$ index. This is true becasue at the start when $i$ equals 2, the array has the correct fib sequnce [0,1]. The at the start of the 2nd on beyond recursive call the array updates the value $i$ with the sum of the preceding numbers using $fibArray[i-1]+ fibArray[i-2]$
+
+source:
+https://gist.github.com/mauris/b1f5f4373259dedbc25c534d1f6d1058
+
